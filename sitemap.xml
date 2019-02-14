@@ -3,12 +3,17 @@
 
     <sitemap>
         <loc>http://blockbb.io/post-sitemap.xml</loc>
-        <lastmod>2019-02-12T07:19:43.905Z</lastmod>
+        <lastmod>2019-02-14T07:54:33.782Z</lastmod>
     </sitemap>
 
     <sitemap>
         <loc>http://blockbb.io/page-sitemap.xml</loc>
         <lastmod>2019-02-12T06:42:51.946Z</lastmod>
+    </sitemap>
+
+    <sitemap>
+        <loc>http://blockbb.io/category-sitemap.xml</loc>
+        <lastmod>2019-02-14T07:54:33.782Z</lastmod>
     </sitemap>
 
     <sitemap>
