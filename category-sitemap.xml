@@ -21,15 +21,29 @@
     </url>
 
     <url>
-        <loc>http://blockbb.io/categories/Crypto-world/</loc>
+        <loc>http://blockbb.io/categories/Crypto-world/Exchanges/</loc>
         <lastmod>2019-05-28T08:21:12.099Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://blockbb.io/categories/Crypto-world/Exchanges/</loc>
-        <lastmod>2019-05-28T08:21:12.099Z</lastmod>
+        <loc>http://blockbb.io/categories/Crypto-world/</loc>
+        <lastmod>2019-05-28T10:16:33.115Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://blockbb.io/categories/%E5%93%B2%E5%AD%A6/</loc>
+        <lastmod>2019-05-28T10:36:28.803Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://blockbb.io/categories/%E5%93%B2%E5%AD%A6/%E5%BF%83%E7%90%86/</loc>
+        <lastmod>2019-05-28T10:36:28.803Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
