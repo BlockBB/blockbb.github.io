@@ -72,13 +72,6 @@
     </url>
 
     <url>
-        <loc>http://blockbb.io/tags/Binance/</loc>
-        <lastmod>2019-05-28T08:21:12.099Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://blockbb.io/tags/Hayek-economics/</loc>
         <lastmod>2019-05-28T10:16:01.546Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -95,6 +88,13 @@
     <url>
         <loc>http://blockbb.io/tags/%E5%83%A7%E4%BE%A3%E4%B8%8E%E5%93%B2%E5%AD%A6%E5%AE%B6/</loc>
         <lastmod>2019-05-28T10:36:28.803Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://blockbb.io/tags/Binance/</loc>
+        <lastmod>2019-05-29T09:40:17.879Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
