@@ -49,13 +49,6 @@
     </url>
 
     <url>
-        <loc>http://blockbb.io/categories/Crypto/</loc>
-        <lastmod>2019-06-03T03:31:40.805Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://blockbb.io/categories/Life/</loc>
         <lastmod>2019-06-06T14:03:41.713Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -65,6 +58,20 @@
     <url>
         <loc>http://blockbb.io/categories/%E8%83%A1%E6%80%9D%E4%B9%B1%E6%83%B3/</loc>
         <lastmod>2019-06-16T17:19:49.472Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://blockbb.io/categories/Crypto/</loc>
+        <lastmod>2019-06-18T16:08:24.549Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://blockbb.io/categories/Crypto/%E7%AC%94%E8%AE%B0%E5%AD%A6%E4%B9%A0/</loc>
+        <lastmod>2019-06-18T16:08:24.549Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
