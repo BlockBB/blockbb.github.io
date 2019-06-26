@@ -63,15 +63,15 @@
     </url>
 
     <url>
-        <loc>http://blockbb.io/categories/Crypto/</loc>
+        <loc>http://blockbb.io/categories/Crypto/%E7%AC%94%E8%AE%B0%E5%AD%A6%E4%B9%A0/</loc>
         <lastmod>2019-06-18T16:08:24.549Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://blockbb.io/categories/Crypto/%E7%AC%94%E8%AE%B0%E5%AD%A6%E4%B9%A0/</loc>
-        <lastmod>2019-06-18T16:08:24.549Z</lastmod>
+        <loc>http://blockbb.io/categories/Crypto/</loc>
+        <lastmod>2019-06-26T09:58:11.268Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
