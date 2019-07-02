@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keyword" content="">
+    <link rel="shortcut icon" href="/img/ironman-draw.png">
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <title>
+        
+          Currency revolution flash - BlockBB | Blog
+        
+    </title>
+
+    <link rel="canonical" href="http://blockbb.io/2019/07/02/Currency-revolution-flash/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS --> 
+    <link rel="stylesheet" href="/css/beantech.min.css">
+    
+    <!-- Pygments Highlight CSS -->
+    <link rel="stylesheet" href="/css/highlight.css">
+
+    <link rel="stylesheet" href="/css/widget.css">
+
+    <link rel="stylesheet" href="/css/rocket.css">
+
+    <link rel="stylesheet" href="/css/signature.css">
+
+    <link rel="stylesheet" href="/css/toc.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+	<!-- Modified by Yu-Hsuan Yen -->
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        
+            background-image: url('Claude_Monet_Rue_de_la_Bavole_Honfleur_Google_Art_Project.jpg')
+            /*post*/
+        
+    }
+    
+    #signature{
+        background-image: url('/img/signature/BeanTechSign-white.png');
+    }
+    
+</style>
+
+<header class="intro-header">
+    <!-- Signature -->
+    <div id="signature">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                
+                    <div class="post-heading">
+                        <div class="tags">
+                            
+                              <a class="tag" href="/tags/#Tech Idea" title="Tech Idea">Tech Idea</a>
+                            
+                              <a class="tag" href="/tags/#Open society" title="Open society">Open society</a>
+                            
+                        </div>
+                        <h1>Currency revolution flash</h1>
+                        <h2 class="subheading">从贝壳到HyperDao</h2>
+                        <span class="meta">
+                            Posted by BlockBB on
+                            2019-07-02
+                        </span>
+                    </div>
+                
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+	
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">BlockBB</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+
+                    
+
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/about/">About</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/archive/">Archives</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/tags/">Tags</a>
+                        </li>
+                        
+                    
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+    <!-- Main Content -->
+    <!-- Modify by Yu-Hsuan Yen -->
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                <blockquote>
+<p>导读： 小时候，我们拿泥人换别人的糖果，一份带有答案的寒暑假作业可以换两只钢笔，现在，幼儿园的小家伙们用蝙蝠侠的战车交换朋友手中的蜘蛛侠玩偶 —— 这些都是<strong>货币</strong>的一种表现形式。</p>
+</blockquote>
+<h3><span id="货币故事">货币故事</span></h3>
+<p><strong>货币</strong>的历史要比<strong>国家</strong>的历史更为久远，有了国家之后才慢慢有了法币，例如我们现在用的人民币、美金、欧元都属于特殊化的货币 — <strong>法定货币</strong>，人类使用<strong>货币</strong>的历史最早出现在物质交换的时代。在原始社会，人们使用以物易物的方式，交换自己所需要的物资，例如以一只羊换一把石斧。但是有时候受到用于交换的物资种类的限制，不得不寻找一种能够为交换双方都能够接受的物品。这种物品就是最原始的货币。</p>
+<p><strong>牲畜、盐、稀有的贝壳、珍稀鸟类羽毛、宝石、沙金、石头</strong>等不容易大量获取的物品都曾经作为货币使用过。</p>
+<p><img src="https://github.com/BlockBB/Blockbb_blog_comments/blob/master/Blog_Img/currency.jpg?raw=true" alt=""></p>
+<p>在中国的历史中，就出现了许多种类的货币，其中某些成为了法定货币，先秦时期的<strong>贝币</strong>，商代的石贝币、骨贝币，甚至铜质的金属贝币，战国时期的铜钱，随着时间的发展，慢慢出现了&quot;<strong>纸币</strong>&quot;，例如宋朝时期的四川<strong>交子</strong>，唐朝初期的<strong>飞钱</strong>，好玩的是，我最开始知道<strong>飞钱</strong>这东西，还是在武侠小说**《大唐双龙记》**里。</p>
+<p>在现代社会中，一些特定社群亦会出现以物易物，如监狱中就常以酒、烟草、咖啡、茶叶、槟榔作为货币，某些以孩童为主的社会，如孤儿院、育幼院，甚至可以用饼干与糖果、口香糖等作为货币，网上曾流传一个故事，中国产的速食泡面一度成为某美帝监狱的硬通货, <a href="https://www.theguardian.com/us-news/2016/aug/22/ramen-prison-currency-study" target="_blank" rel="noopener">Ramen is displacing tobacco as most popular US prison currency, study finds</a>。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">“是的，方便面有溢价，但你要知道，美元会贬值，而方便面不会。”</span><br><span class="line"></span><br><span class="line">“在监狱里，你必须遵从我的规则。”</span><br><span class="line"></span><br><span class="line">“10包中国方便面换1克毒品。”</span><br></pre></td></tr></table></figure>
+<h3><span id="纸币产生">纸币产生</span></h3>
+<p>不管是贝壳还是泡面或者铜钱，用起来都太麻烦，运输保存不便利，这也是<strong>交子</strong>和<strong>飞钱</strong>出现的原因之一，以何种方式产生呢？—— <strong>抵押</strong>。</p>
+<p><img src="https://github.com/BlockBB/Blockbb_blog_comments/blob/master/Blog_Img/jiaozi.jpeg?raw=" alt=""></p>
+<p><strong>交子</strong>，是老祖宗在中国北宋时四川省流通的<strong>纸币</strong>，是世界上最早“正式”发行的钞票。<strong>交子</strong>是古代四川省的俚语，其中“<strong>交</strong>”是“**双面印刷”**的意思，词语的意思解释为双面印刷的票券或凭证。</p>
+<p>当时因为北宋政府的货币政策原因，四川主要用铁钱，于是铁钱成为四川的主要货币。但因为铁比铜廉价，铁钱价值较低，重量更高，铁钱1000文重约25斤，商人经常要用马车载运铁钱，使用上十分不便。民众往往将铁钱<strong>抵押</strong>在“<strong>交子铺</strong>”中，换取票据交子，并在日常生活中用作交易，说白了就是<strong>抵押产生纸币</strong>。</p>
+<p>&quot;<strong>交子铺</strong>&quot;收到这些抵押的金属钱币之后开始四处投资搞基础建设，今天投资个<strong>怡红院</strong>，明天建个<strong>万花楼</strong>，或者开个赌场，合办一个绸缎庄，总之都把钱都花的差不多了，反正没有纪检委，衙门里也是自己人，由于过度投资，使<strong>交子</strong>难于兑换，多次发生挤兑的骚乱。</p>
+<p><img src="https://github.com/BlockBB/Blockbb_blog_comments/blob/master/Blog_Img/GangYuan.jpeg?raw=true" alt=""></p>
+<p><strong>港圆</strong> — 香港是最先把通货称为“<strong>圆</strong>”的地方。本来香港成为英国开埠之初，采用英国货币。但因为当时与中国大陆的贸易主要以银作为单位，各地银圆包括墨西哥鹰洋、西班牙佛银（查理银元）及大清银圆等都在香港自由通行。</p>
+<p>香港在19世纪也出现了许多所谓的<strong>山寨币</strong>，港英政府曾经取缔过部分货币，这些举措一度引起华人的不便与不满。自1983年起，香港建立了港元发行与美圆挂钩的联系汇率制度，由香港金融管理局<strong>授权并监管</strong>下的三家发钞银行所发行，包括香港<strong>上海汇丰银行</strong>、<strong>渣打银行（香港）<strong>和</strong>中国银行（香港）</strong>。发钞行在发行任何数量的港币时，必须在按7.80港元兑1美圆的汇率下向金管局交出美圆，登记或录入外汇基金账目，同时领取负债证明书后才可以开始印钞。这样一来，外汇基金所持的美圆就为港元纸币的稳定提供了支持。</p>
+<p><strong>近代的港圆</strong>与<strong>宋代的交子</strong>都是通过<strong>抵押</strong>的方式产生的，就是说都有各自的<strong>锚定物</strong>，这是一种纸币的产生方式，还有一种更牛逼的方式 —— <strong>凭空产生</strong>。</p>
+<p>伟大的中国共产党在1948年和1949年取得中国大东北地区的控制权，1948年12月，共产党在华北银行、北海银行、西北农民银行的基础上，在河北省石家庄市组建了中国人民银行，接管共产党控制地区的货币发行权。中华人民共和国公告，在一段短期时间内，十万元金圆券可以兑换一元人民币。每解放一个地方就拉着数卡车的<strong>人民币纸币</strong>去兑换当时各种乱七八糟的国民党货币，由指定的<strong>交易所</strong> —— <strong>央行</strong>统一兑换，中国独立了，法币也逐渐统一了，老百姓吃喝拉撒全都用人民币。</p>
+<h3><span id="货币在演进">货币在演进</span></h3>
+<p>世界上没有完美的货币，大一统的法币也会有问题，<strong>交子</strong>的抵押物被胡乱花掉，引起挤兑问题，国民党政府发的金圆券早上可以买<strong>一袋</strong>大米，到了晚上只能买<strong>一勺</strong>，<strong>津巴布韦</strong>的货币汇率可比加密货币交易所里的<strong>山寨币涨跌</strong>刺激多了，总统动动嘴，一张<strong>五万块钱</strong>的纸币几天之后价值就变成<strong>五毛</strong>，港圆、人民币、美元因为有各自政府的运作，可以保持<strong>基本的稳定性</strong>，从货币的历史可以看出来，随着社会的进步，总会有仁人志士在不停的努力，改善货币的流通形式，降低交易成本，试图让社会运作的高效，<strong>促进交易的自由性、隐私性</strong>。</p>
+<p><img src="https://github.com/BlockBB/Blockbb_blog_comments/blob/master/division_line_img/book_fan.png?raw=true" alt=""></p>
+<h4><span id="密码朋克">密码朋克</span></h4>
+<p><strong>David Chaum ,1985, E-Cash</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&quot;Security without Identification: Transaction Systems to Make Big Brother Obsolete&quot;</span><br></pre></td></tr></table></figure>
+<p><strong>Philip Zimmermann,1991, PGP</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">PGP（Pretty Good Privacy）工具包诞生，同期受到美国政府指控，禁止发布这一技术，经过不懈斗争，于1996年</span><br><span class="line">美国政府取消对作者本人的指控。</span><br></pre></td></tr></table></figure>
+<p><strong>Eric.Huges,1993, A Cypherpunk’s Manifesto</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Privacy is necessary for an open society in the electronic age. Privacy is not secrecy.</span><br></pre></td></tr></table></figure>
+<p><img src="https://github.com/BlockBB/Blockbb_blog_comments/blob/master/Blog_Img/TimothyCMay.jpeg?raw=" alt=""></p>
+<p>密码朋克的邮件列表在鼎盛时期大概有1400人，人们所熟知的维基解密创始人- <strong>Julian Assange</strong>，B-Money的创始人 &amp; Crypto C++ library 维护者 - <strong>Wei Dai</strong>，Hashcash的创始人 - <strong>Adam Back</strong>，Bit Gold创史人 - <strong>Nic Szabo</strong>，还有BTC的创始人 - <strong>中本聪</strong>都是这个社区的一员，这些人不断的影响和改变着世界，后来的故事大家都知道了，BTC以一种极其迅速的姿态席卷全球，每一次打击都让其更健壮。</p>
+<p><strong>BTC、ETH是我们的理想货币嘛</strong>？很明显不是，首先其巨大的波动性就不利于在日常中所使用，变革在一点点的发生，创新在一点点的出现，<strong>回过头来看</strong>，或许<strong>交子</strong>和<strong>港圆</strong>的发行方式提醒了加密社区的变革者们，<strong>MakerDAO</strong>利用公链的透明性、独立性从技术上保证了<strong>抵押的可信性</strong>，不会产生抵押物被随便花掉的现象，不同之处：</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>交子</th>
+<th>DAO</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>可信性</td>
+<td>抵押于第三方</td>
+<td>抵押于自己的CDP合约</td>
+</tr>
+<tr>
+<td>控制权</td>
+<td>抵押物控制权在他处</td>
+<td>CDP合约所有权属于自己</td>
+</tr>
+<tr>
+<td>唯一性</td>
+<td>交子可伪造、破损</td>
+<td>数字化 — Dai</td>
+</tr>
+<tr>
+<td>兑换性</td>
+<td>有挤兑风险</td>
+<td>无挤兑风险</td>
+</tr>
+</tbody>
+</table>
+<p>自创立以来，MakerDao取得了长足的进展，让人们看到基于加密货币本身的力量，创造<strong>内生稳定币</strong>的思路是可行的，它正以另一种方式拓展加密货币的使用，<strong>但这远远不够</strong>，<strong>We Want More</strong>，我们还需要在以下5个方面拓展<strong>内生稳定币</strong>的生态。</p>
+<ol>
+<li>更多的抵押物，很明显，加密货币领域内的硬通货是BTC，我们需要更多的货币加入，LTC、BCH、ETH、XMR、ZEC 等等！</li>
+<li>更多的手段保持<strong>内生稳定币</strong>的稳定，除了单一的抵押率之外，我们还需要其他方式，法币世界里，各国央行除了保证金、利率之外还有其他其他金融工具，Crypto同样发展自己的手段。</li>
+<li>Oracle合约的稳健性、安全性。</li>
+<li>项目的社区治理，是基金会拥有决定权还是采用社区方式 —— 链上投票。</li>
+<li>这是很多人忽略的一个点，在我看来与第一点—— 多抵押资产同样重要，即<strong>拓展用户</strong>和<strong>丰富使用场景</strong>，现在Dai在<strong>交易所</strong>的支持力度还不是很大，以现在的流通量，充当交易对<strong>另一端</strong>这个角色并没有充分体现其价值，其他稳定币 —— USDT 有借贷、OTC服务，Dai在Defi领域里还有非常广阔的空间，现在并没有某个<strong>流量群体</strong>去大力发展起生态。</li>
+</ol>
+<p><img src="https://github.com/BlockBB/Blockbb_blog_comments/blob/master/division_line_img/book_fan.png?raw=true" alt=""></p>
+<h4><span id="跨链里隐藏了宝贝">跨链里隐藏了宝贝</span></h4>
+<p><strong>六月初</strong>，我们举办了一场跨链技术讨论会，技术社区里有一种疑问 —— 跨链能做什么？ 貌似把代币跨链好像用处不大啦，Web3的终极目标是<strong>价值</strong>（注意不是代币跨链）跨链，<strong>何为价值跨链呢</strong>？假设我创造了一个游戏，这个游戏需要调用不同链上的合约，在这个链上获取Oracle数据，在另外一条链上调用某个游戏SDK接口，这时需要有个类似TCP/IP的协议来标准化这些，让各个链可以交流信息，很明显这些信息是有价值的，这就是PolkDot想要做成的事情，这个理想非常宏伟，不是一蹴而就的，在这达成这个最终的目标前，<strong>我们需要先把各个链之间的Token流转打通</strong>，这可能就是有些人说的跨链毫无用处的起因，他们认为这无非就是个去中心化交易所，各个<strong>中心化的交易所</strong>已经做的很好的，已经把链给<strong>跨</strong>过去了。</p>
+<p>这种看法限制了跨链技术的想象力，即使我们当前只能实现<strong>Token的跨链</strong>，其价值也可利用起来，这就涉及到了接下来标题里提到的<strong>隐藏</strong>价值 —— <strong>跨链抵押稳定币</strong>，我在技术社区里看到这样的一个Idea  —— <strong>Hyper Dao</strong>。</p>
+<p><strong>最大的特点</strong></p>
+<p>公链项目HX已经以某种方式实现了<strong>BTC与HX</strong>的Token跨链，<strong>Hyper Dao</strong>会利用HX的跨链技术，创立对BTC的稳定币借贷系统，为了叙述方便，我暂定HyperDao里的稳定币名为<strong>Hyper-DAi</strong>，它会有两种稳定币形式，对标人民币的<strong>HyperCNY</strong>和对标美元的<strong>HyperUSD</strong>，分别对应 1:1 的人民币和美元，在<strong>CDP</strong> (Collateralized Debt Positions）里抵押BTC和其他主流币可以产生不同的稳定币，用户可以选择抵押BTC产生HyperCNY ，也可以产生HyperUSD，HyperDao充分利用了BTC等主流币的市值体量和用户基础，毕竟BTC占有整个加密货币50%以上的市值，BTC是最大抵押品池子，以前无人能做到跨链抵押，现在利用<strong>HX</strong>的跨链技术能力，用户可以把主流代币在HX上进行抵押，创建CDP仓，产生对应的<strong>Crypto内生稳定币</strong>，用于日常所需，得益于主流货币的庞大市值，利用HyperDao功能产生的大量稳定币，可以用于去中心化交易所的<strong>交易锚定物</strong>，等同于USDT的功能，而<strong>HyperDao稳定币</strong>的透明性远远高于USDT。</p>
+<p><strong>双稳定币模型</strong></p>
+<p>双稳定币对标人民币和美金的的组合，犹如硬币具有两面性，优势在于解耦了稳定币的网络关联性，如果是同一个稳定币，一个小小的波动必会引起全局的涟漪，具有蝴蝶效应，双稳定币系统增加了整个系统的<strong>稳健性和冗余性</strong>，日后怎对不同的人群、不同的主流代币，或许可以增加更多的稳定币，丰富整个Defi业态，另一方面，多稳定币的设计也分散了整体的网络效应，弱化了网络的流动性，尤其是在交易所这种非常需要流动效应的地方，多个拳头同时发力，<strong>不如劲儿往一处使</strong>的效果好，有点<strong>分叉</strong>的意思，但<strong>分叉</strong>同时又增加了整个系统的<strong>反脆弱性</strong>，未来HyperDao的治理必定会讨论此问题，我相信一定有办法可以找到平衡点，或者放开限制让使用者去选择是个好办法，网络会自动拟合、进化成适合它发展的形态。</p>
+<p><img src="https://github.com/BlockBB/Blockbb_blog_comments/blob/master/division_line_img/book_fan.png?raw=true" alt=""></p>
+<p>回过头来看前文讨论MakerDao稳定币生态的时候，<strong>第五点</strong>提到当前的生态面临用户稀少和使用场景有限的问题，如果想解决这两点，一定要有用户，用户和使用场景是互补的关系，也存在是先有蛋还是先有鸡的问题，如果用户和业务要想从稳定币系统里自发形成，就一定会面临这个问题，不过我们可以换个角度考虑来解决这个问题，能不能从外部引入用户或者成熟的业务？</p>
+<p>Crypto生态里大量用户存在于哪里呢？—— <strong>中心化交易所</strong>，<strong>交易所是Defi生态最好的用户来源</strong>，前几天在另外一篇日记，讨论<a href="https://blockbb.io/2019/06/26/How-to-use-Libra-liquidity/">如何共享Libra流动性</a>的时候也提到了交易所，很明显，HyperDao也注意到了用户和业务的问题，于是很自然的，HyperDao框架不单单包含了基于<strong>HX的跨链稳定币</strong>系统，也包含了<strong>HPX交易所</strong>业务，未来会把二者结合，衍生出丰富的Defi服务。</p>
+<p><strong>服务协议</strong></p>
+<p>除了我前面提到的结合HyperDao稳定币开设交易对之外，还可以开展借贷服务，如果只是简单的抵押主流币-产生稳定币的业务，这里会有个用户增长的问题，代币持有者基于什么样的动力去创建CDP-产生稳定币呢？个人需要？买个炸鸡腿？还是套利？<strong>很明显</strong>，当前的抵押服务，后面的长尾服务是缺失的，稳定币产生后的再次利用效果很弱，说白了就是没有了第二次或者第N次的<strong>钱生钱</strong>服务，如果给HyperDao的稳定币系统分层的话，我会分成如下3层：</p>
+<ol>
+<li>
+<p>第一层，提供基本的技术服务，基于HX的跨链能力的稳定币系统。</p>
+</li>
+<li>
+<p>第二层，安全稳定的HyperCNY和HyperUSD产生系统，这里包括稳定的Oracle功能，安全的CDP服务，多种金融调节工具（不是只有<strong>稳定币费率</strong>这一种可调参数）。</p>
+</li>
+<li>
+<p>第三层，服务层</p>
+<p>3.1 包括交易所提供的稳定币借贷系统（这样能促进更多人抵押自己的币而借给别人HyperUSD使用，原来的CDP抵押只有<strong>自需</strong>这一特点，现在需要用交易所提供中心化服务，创新出其他的服务鼓励用户进行抵押而获取利润）。</p>
+<p>3.2 场外稳定币OTC服务。</p>
+<p>3.3 便捷的钱包账户系统（方便第三方服务商利用HyperDao，例如为社区meetup组织者提供<strong>一键开户</strong>，犹如<strong>支付宝的商户功能</strong>）。</p>
+</li>
+</ol>
+<p>HyperDao体系内的交易所可以利用庞大的用户群体去加速Defi生态的扩展，创建多样的用户的服务，引导社区，最终社区会创建适合自己的Defi生态，必要的引导是需要的，后面的壮大是自下而上孕育的，需要时间跟耐心。</p>
+<h3><span id="开放社会">开放社会</span></h3>
+<p><img src="https://github.com/BlockBB/Blockbb_blog_comments/blob/master/open%20society.jpg?raw=" alt=""></p>
+<p>有位大牛- <strong>Karl Raimund Popper</strong> 写了本书 -<strong>《The Open Society and its Enemies》</strong>，里面提到了<strong>开放社会</strong>的概念，这本书不但阐述了这个概念，还顺便骂了一圈人，这些对象包括<strong>柏拉图</strong>、<strong>黑格尔</strong>和<strong>卡尔·马克思</strong>，指他们以历史主义为依托、巩固自己的政治理念，批判这三位的<strong>历史主义思想</strong>对热爱自由和开放社会的存在造成的威胁；并指出在历史格局中是多元因果元素在运行，不是按照某些伟人的既定路线发展的，反对激进的乌托邦变革。</p>
+<p>你看他骂的这些人，都是泰斗中的泰斗，正是因为对主流价值观的批判，才让当时的人有了不同的思考角度，作者也因而盛名暴起。</p>
+<p>用我能理解的话来说就是<strong>历史不是哪位大佬BB两句就可以决定的，不是通过伟大图景来设计出来的，真正起作用的都是那些微小的创造</strong>。</p>
+<p>俗话说，<strong>骂人一时爽，一直骂人一直爽</strong>，作者本人把这点体现的淋漓尽致，与<strong>宏大的历史</strong>针锋相对，也得罪了不少人，一度连书都出版不了，后来还是在<strong>哈耶克</strong>和他的一位艺术家朋友的帮助下，才找到愿意发行此书的出版社。他的好朋友<strong>哈耶克</strong>就是那位写《通往奴役之路》和《货币的非国家化》的作者，现在哈耶克老爷子已经被树立为加密货币的<strong>精神导师</strong>了。</p>
+<p>关于这本书，豆瓣上有段话写的很好，我特地摘几句放在这里：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">人类历史发展更深层次的推动力量，即个人日常生活的创造和实践。</span><br><span class="line">哪怕一次行动、一次改进、一次合作，日积月累，也足以形成前进的强大合力。</span><br><span class="line">这也就是波普尔所强调的“零星社会工程” 。</span><br></pre></td></tr></table></figure>
+<p><img src="https://github.com/BlockBB/Blockbb_blog_comments/blob/master/division_line_img/book_fan.png?raw=true" alt=""></p>
+<h3><span id="结语">结语</span></h3>
+<p><strong>从远古的贝壳易物到交子的出现；从密码朋克组织的成立到比特币的问世；从MakerDao的创建到HyperDao的跨越</strong>，这些<strong>零星的社会工程</strong>的出现丰富了历史，成为时间洪流的一部分，也影响了我们的生活，无论成功或湮灭，价值终归会体现在未来，我们是自然的产物，自然既创造了我们，又赋予我们以改造世界的力量、测试未来的力量。</p>
+<p><strong>前路漫漫 ，同行同行 ！</strong></p>
+
+                
+
+                <hr>
+                <!-- Pager -->
+                <ul class="pager">
+                    
+                    
+                        <li class="next">
+                            <a href="/2019/06/26/How-to-use-Libra-liquidity/" data-toggle="tooltip" data-placement="top" title="How to Join Libra liquidity">Next Post &rarr;</a>
+                        </li>
+                    
+                </ul>
+
+                <!-- duoshuo Share start -->
+                
+                <!-- 多说 Share end-->
+
+                <!-- 多说评论框 start -->
+                
+                <!-- 多说评论框 end -->
+
+                <!-- disqus comment start -->
+                
+                    <div class="comment">
+                        <div id="disqus_thread" class="disqus-thread"></div>
+                    </div>
+                
+                <!-- disqus comment end -->
+            </div>
+            
+            <!-- Tabe of Content -->
+            <!-- Table of Contents -->
+
+    
+      <aside id="sidebar">
+        <div id="toc" class="toc-article">
+        <strong class="toc-title">Contents</strong>
+        
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">货币故事</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">纸币产生</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">货币在演进</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">3.1.</span> <span class="toc-nav-text">密码朋克</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">3.2.</span> <span class="toc-nav-text">跨链里隐藏了宝贝</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">4.</span> <span class="toc-nav-text">开放社会</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">5.</span> <span class="toc-nav-text">结语</span></a></li></ol>
+        
+        </div>
+      </aside>
+    
+
+                
+            <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                       
+                          <a class="tag" href="/tags/#Tech Idea" title="Tech Idea">Tech Idea</a>
+                        
+                          <a class="tag" href="/tags/#Open society" title="Open society">Open society</a>
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+                <hr>
+                <h5>FRIENDS</h5>
+                <ul class="list-inline">
+
+                    
+                        <li><a href="http://beantech.org" target="_blank">Bean Tech</a></li>
+                    
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<!-- disqus embedded js code start (one page only need to embed once) -->
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = "your-disqus-ID";
+    var disqus_identifier = "http://blockbb.io/2019/07/02/Currency-revolution-flash/";
+    var disqus_url = "http://blockbb.io/2019/07/02/Currency-revolution-flash/";
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<!-- disqus embedded js code start end -->
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'hover',
+          placement: 'left',
+          icon: 'ℬ'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
+
+<script type="text/javascript" src="/js/zooming.js"></script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                
+                
+                    <li>
+                        <a target="_blank" href="https://twitter.com/ImBlockBB">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+                
+
+                
+
+                
+
+                
+
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; BlockBB 2019 
+                    <br>
+                    Theme by <a href="http://huangxuan.me">Hux</a> 
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-heart"></i>
+                    </span> 
+                    re-Ported by <a href="http://beantech.org">BeanTech</a> | 
+                    <iframe style="margin-left: 2px; margin-bottom:-5px;" frameborder="0" scrolling="0" width="91px" height="20px" src="https://ghbtns.com/github-btn.html?user=YenYuHsuan&repo=hexo-theme-beantech&type=star&count=true">
+                    </iframe>
+                </p>
+				<p class="copyright text-muted">
+			       <a><img alt="web trackers" src="https://ssl.gostats.com/bin/count/a_506642/t_1/i_1/ssl_monster.gostats.com/counter.png" style="border-width:0"></a>
+			       visitors since 2019/02/15,
+				   <span class="post-count">43k words altogether</span>	   
+				</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js"></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- 
+     Because of the native support for backtick-style fenced code blocks 
+     right within the Markdown is landed in Github Pages, 
+     From V1.6, There is no need for Highlight.js, 
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0  
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/    
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("http://blockbb.io/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+<script>
+    // dynamic User by Hux
+    var _gaId = 'UA-XXXXXXXX-X';
+    var _gaDomain = 'yoursite';
+
+    // Originial
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
+</script>
+
+
+
+
+<!-- Baidu Tongji -->
+
+
+
+
+
+
+	<a id="rocket" href="#top" class=""></a>
+	<script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+    <script type="text/javascript" src="/js/toc.js?v=1.0.0" async=""></script>
+<!-- Image to hack wechat -->
+<img src="http://blockbb.io/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>
