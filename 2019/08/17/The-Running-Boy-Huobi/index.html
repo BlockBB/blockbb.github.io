@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keyword" content="">
+    <link rel="shortcut icon" href="/img/ironman-draw.png">
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <title>
+        
+          The Running Boy Huobi - BlockBB | Blog
+        
+    </title>
+
+    <link rel="canonical" href="http://blockbb.io/2019/08/17/The-Running-Boy-Huobi/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS --> 
+    <link rel="stylesheet" href="/css/beantech.min.css">
+    
+    <!-- Pygments Highlight CSS -->
+    <link rel="stylesheet" href="/css/highlight.css">
+
+    <link rel="stylesheet" href="/css/widget.css">
+
+    <link rel="stylesheet" href="/css/rocket.css">
+
+    <link rel="stylesheet" href="/css/signature.css">
+
+    <link rel="stylesheet" href="/css/toc.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+	<!-- Modified by Yu-Hsuan Yen -->
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        
+            background-image: url('1920px_Claude_Monet_Regattas_at_Argenteuil_Google_Art_Project.jpg')
+            /*post*/
+        
+    }
+    
+    #signature{
+        background-image: url('/img/signature/BeanTechSign-white.png');
+    }
+    
+</style>
+
+<header class="intro-header">
+    <!-- Signature -->
+    <div id="signature">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                
+                    <div class="post-heading">
+                        <div class="tags">
+                            
+                              <a class="tag" href="/tags/#火币" title="火币">火币</a>
+                            
+                              <a class="tag" href="/tags/#Exchange" title="Exchange">Exchange</a>
+                            
+                        </div>
+                        <h1>The Running Boy Huobi</h1>
+                        <h2 class="subheading">进击中的火币</h2>
+                        <span class="meta">
+                            Posted by BlockBB on
+                            2019-08-17
+                        </span>
+                    </div>
+                
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+	
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">BlockBB</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+
+                    
+
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/archive/">Archives</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/tags/">Tags</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/about/">About</a>
+                        </li>
+                        
+                    
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+    <!-- Main Content -->
+    <!-- Modify by Yu-Hsuan Yen -->
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                <blockquote>
+<p>导读：在Bitfinex团队宣布其平台币Leo募资的时候，BF发布了其平台过往的运营收入信息，当天微信群里流出来一张火币创始人李林的朋友圈截图，大概的意思是说 “<strong>Bitfinex100多人的团队竟然创造了这么多的利润，火币该反思下了</strong>”，群里的小伙伴跟火币的朋友开玩笑，李老板让你们“<strong>反思</strong>‘一下，这也引出了下文要讨论的3个话题。</p>
+<ol>
+<li>
+<p><strong>火币到底有多少条业务线</strong>？</p>
+</li>
+<li>
+<p><strong>火币的公链能火吗？</strong></p>
+</li>
+<li>
+<p><strong>火币中国可以做更多吗？</strong></p>
+</li>
+</ol>
+</blockquote>
+<p><img src="https://github.com/BlockBB/Blockbb_blog_comments/blob/master/division_line_img/xuhao_1.jpeg?raw=true" alt=""></p>
+<h3><span id="火币集团到底有多少条业务线">火币集团到底有多少条业务线？</span></h3>
+<p>火币集团应该是头部交易所里布局最广的一家团队了，涵盖交易业务、矿池业务、投资业务、火讯媒体业务、钱包、火信App、还有<strong>火币中国</strong>包含的众多业务。</p>
+<p>火币集团的子业务其实都可以在这个领域里找到对标物，这本来应该是10个不同公司才能做起来的业务，现在被火币集团揉在一起，所以整个集团人数众多也就不奇怪了。但最赚钱的业务集中在交易业务上，而其他业务基本都处于持续投入的状态，这或许是火币创始人李林发朋友圈的主要原因。</p>
+<p>从火币前段时间公布的的HT回购销毁金额来看，火币应该是几大平台里盈利最好的（当然这也是基于已有各大平台发布的信息来看，保不齐有人闷声发大财。），但如果按“<strong>人均GDP</strong>”来算（盈利/团队人数），火币相对来说是比较低的。</p>
+<p>火币给人的感觉是比较<strong>稳</strong>，所以从布局上看，具有前瞻性，着重打造一个生态，这也是火币业务众多的一个原因，未来，如果每个子业务都能找到其业务模式和盈利点，并且能为火币集团整体目标作出贡献，那或许是最佳状态。</p>
+<p><img src="https://github.com/BlockBB/Blockbb_blog_comments/blob/master/division_line_img/pencil.png?raw=true" alt=""></p>
+<h4><span id="业务疑问">业务疑问</span></h4>
+<p><strong>业务架构</strong>：在火币<a href="https://www.huobigroup.com/zh-cn/business/" target="_blank" rel="noopener">集团业务</a>板块展示中，分别有火币Labs、火币资本、火币生态基金的介绍和链接，从业务属性上来看，这三者的业务都有重合，我在一次Meetup上，见过一位火币Labs的朋友，那是个链游峰会，我问他火币Labs现在都做些什么？他回答我说其中一部分业务是<strong>投资和孵化</strong>，我比较好奇是的<strong>火币资本</strong>不才是投资孵化的主体吗？还有个<strong>火币生态基金</strong>，我的疑问是假如我有个不错的项目需要资金和资源支持，貌似找这三者中任意一个团队都可以，<strong>给外界一种模糊庞杂的印象</strong>。</p>
+<p>当然作为这个圈子里的人来说，我有需要的时候知道找谁。不过从火币的品牌宣传和团队内部的业务合作上来说，感觉这并不太合适，我不知道是否其他人也有这种印象？</p>
+<p><strong>火币矿池</strong>：火币有自己的矿池，还有矿池Token — HPT，有位持有HT的老韭菜在群里吐槽 ，“他真希望火币能把HPT和HT和合并”，整个火币生态如果能用一种token作为通证会利于平台币价值的提高，这位老韭菜的出发点是希望HT的持续升值，无可厚非。</p>
+<p>在通信行业工作的时候，作为同行，我们经常能听到华为的任总说“<strong>集中火力向一个城墙口冲锋</strong>”，后来我们所有人都看到了华为的<strong>冲锋</strong>成果了。</p>
+<p>矿池比较好的一个用途就是内嵌到交易所用户的账户体系之内，给用户提供持币生息，类似<strong>阿里的余额宝</strong>功能，提供一定的用户粘性，增加平台的屯币量。</p>
+<p>火币矿池里还有个<strong>矿池交易所</strong>，我调研下来，身边的朋友大家都用Huobi Global, 没有人用这个矿池交易所，甚至有几个人都不知道还有个矿池交易所。矿池交易所能做的，火币Global都能做，**其定位和差异化是什么呢？**能为火币带来什么价值？无论是EOS生态，还是未来的Polkdot生态、Cosmos生态不是那么容易起来的，为这些Staking矿币单独做个交易所收益可能不会很大，还花了很多资源去维护，EOS生态里，牛逼一点的团队都会想申请Huobi Global，实在不行就去其他小交易所，费用也不高，在一线大交易所和其他小交易所之间，火币的矿池交易所差异化优势没那么明显，外边也几乎看不到这个矿池交易所的宣传活动。</p>
+<p><strong>火币云</strong>：Amazon有亚马逊云，阿里有阿里云，但你没看到亚马逊鼓励其他团队说你来在我的云服务上再开个社区版的亚马逊商店服务，共享我亚马逊主站的流量，淘宝也没这么干过，举个极端的例子：拼多多创业的时候，能把货品和流量跟淘宝共享，使用阿里云架设自己的服务？</p>
+<p>区块链虽然是从社区里起来的，也鼓励社区文化，但商业本质、竞争本质却没变化，现在新出来的交易所，但凡有点野心的，都是自己搭建团队，使用自己开发的交易系统，他是来这个领域里<strong>跟火币抢肉</strong>的，是不会使用你的云服务的，当然这也是我个人的想法。这种加盟服务在<strong>线下</strong>有成功案例，互联网的<strong>线上服务</strong>都是在尽可能争取一家独大，都是垄断，没有分享这一回事。 <strong>淘宝平台里可以有很多商户，但是马爸爸却不允许商户们有很多淘宝</strong>。</p>
+<p><img src="https://github.com/BlockBB/Blockbb_blog_comments/blob/master/division_line_img/xuhao_2.jpeg?raw=true" alt=""></p>
+<h3><span id="火币公链真能火吗">火币公链真能火吗？</span></h3>
+<p>本文中，公链这个话题是我最感兴趣的，因为我自己就是做公链的，在推技术社区的时候，一直在思考“<strong>公链到底能做什么？</strong>”这个问题困扰了很多人。</p>
+<p>回答这个问题之前，得先问公链是否能火？<strong>这是一定的，勿容置疑的</strong>，Crypto世界最大的公链就是BitCoin，ETH也是公链，区块链行业里，交易所可能并不需要太多，大家的提供的服务都是标准化的，常用的就这几家，公链则不然，公链承担了区块链行业创新载体的角色，虽然这些Idea还没有落地，但所有人都在努力尝试中。</p>
+<p>诚然，95%的公链都会死掉，每一批新出来的公链都会死掉一大批，例如17/18年新出来的公链，现在已经挂掉一批，19/20年还会有新公链出来，又会挂掉一批，然后17年到20年之间剩下的这批公链又会淘汰掉一批，市场会持续的从公链项目中<strong>优中选优</strong>。</p>
+<p>公链项目给这个行业带来了<strong>反脆弱性</strong>，通过他们的持续更新换代，给这个行业带来了更多的创新、增加了业务落地的可能性，回过头来看，公链被淘汰的三个首要原因：</p>
+<ul>
+<li>一是团队技术研发能力弱，大部分团队都在做Fork和小修小改的工作，根本完成不了RoadMap的愿景。</li>
+<li>二是短期内没找到“<strong>落地</strong>”场景，导致没有用户和开发者持续的进入，也没赢收。</li>
+<li>三是资金的匮乏，团队把钱花光了，后续研发无以为继。</li>
+</ul>
+<p>而且这三点又息息相关，互相影响，导致公链不断的更新换代。</p>
+<p><img src="https://github.com/BlockBB/Blockbb_blog_comments/blob/master/division_line_img/pencil.png?raw=true" alt=""></p>
+<p>火币公链很明显能克服上述三个问题，或者说在一定程度上能解决部分问题，首先不用担心研发资金的问题，火币团队的营收能力勿容置疑，其次关于“<strong>落地</strong>”这块也具有先天的优势，稍后详细解释，最后火币公链开发已经很久了，火币的策略是持续寻找优秀的团队合作开发，现在跟Nervos团队合作，Nervos团队的技术实力在全球的团队中都属一流，另外火币团队未来一定会建立一支自己的团队来跟Nervos合作对接，因为这跟“<strong>落地</strong>”有莫大关系。</p>
+<p>前几天，我无意中发现了火币创始人李林的公众号，有一篇文章专门论述火币公链，我摘抄一段在这里。</p>
+<blockquote>
+<p>火币公链立足于解决以上问题，火币公链的核心定位及特点：</p>
+<p>1）基于区块链的全球性的资产货币化及金融市场的基础设施（顺带说一下：最近大家都在讨论的Libra的核心定位是货币及支付）</p>
+<p>2）提供链上的合规及监管框架，全面深度支持合规及监管</p>
+<p>3）提供高性能的链上交易，满足金融交易的高性能要求</p>
+<p>4）支持不同类型的区块链资产及传统资产上链</p>
+<p>5）支持第三方基于火币公链协议开发及运营子链</p>
+<p>6）支持第三方为链上资产提供DeFi服务</p>
+</blockquote>
+<p>关于火币为什么要做这个事，<strong>李林的公众号</strong>里也说明了，我最喜欢其中的两个点是：</p>
+<blockquote>
+<p>1.火币集团的使命是“让金融更高效，让财富更自由”，<strong>火币公链不仅符合火币集团的战略，更是完成火币人的使命</strong>。</p>
+<p>2.火币主营业务虽已经有一定的领先优势，但未来的区块链资产交易所产业形态可能会发生深远变革，在公链技术及商业模式的探索，<strong>既是一种创新突破，也是一种战略防守</strong>。</p>
+</blockquote>
+<p><img src="https://github.com/BlockBB/Blockbb_blog_comments/blob/master/division_line_img/pencil.png?raw=true" alt=""></p>
+<h4><span id="火币公链让财富更自由-让交易更自由">火币公链让财富更自由、让交易更自由</span></h4>
+<p>互联网最主要的两个作用 – 促进<strong>交易自由</strong>和<strong>交流自由</strong>，支付宝、微信支付、借贷平台都属于促进交易自由的范畴，微信、Facebook、Reddit都属于促进交流自由的范畴，区块链技术也会承担这连个角色，而且会比互联网更彻底。</p>
+<p>比特币已经在一定程度上实现了交易自由的初步愿景，但还需完善，未来的Web3可能会在一定程度上实现交流自由的想法。</p>
+<p>如李林所说的，火币这6年来在交易方面积累了许多经验，所以火币公链的<strong>落地</strong>业务还是会回归到交易层面，可能展现形式不同而已，未来也可以进行公链的合规化探索，符合监管要求。</p>
+<p>我在前端时间写的笔记中也讨论了币安在交易业务方面的探索，<a href="https://blockbb.io/2019/05/28/Exchange-Freedom-in-the-Crypto-Ball/">Crypto世界的尖兵Binance</a>，币安的思路跟火币还不大一样，无论是友是敌，都可以互相取长补短，互相促进。</p>
+<h4><span id="huobi-dex">Huobi  DEX</span></h4>
+<p>公链交易的合规化不单单取决于公链本身，还依赖于政策法规的支持，这条路会非常漫长，所以在前期，个人看法，火币公链的最佳落地场景是<strong>DEX</strong>，火币公链可以<strong>用DEX来做试金石</strong>，产品总归是需要持续迭代的，不可能一下子出现完美的产品，Huobi  DEX可以进行不同的实验，测试市场和开发者的反馈，而且面对未来的长尾交易市场，DEX也具有优势。</p>
+<p>HT没有在Binance上出现，也没有在Okex和Bitfinex上出现，美国用户因为合规的问题，未来可能也不能买，BF的Leo就禁止美国用户，各个平台还有竞争关系，上对方代币的可行性很小。DEX会是火币Token一个很好的承载体，任何人都可以在上面用HT和其他代币进行交易，币安前段时间开始禁止美国用户使用中心化交易所的服务，导致前期辛苦建立的用户资源流失，非常可惜，如果Binance的Dex早一年出来，<strong>开发跨链技术</strong>，引导某些国家的用户使用Dex服务，在一定程度上可以减轻用户流失的问题，毕竟Dex具有先天的非Kyc优势，在DEX钱包的易用性上持续优化，也会有很多用户去用的，对于普通用户来说，交易深度也还可以接受。</p>
+<p>前段时间Cosmos和PolkDot出来的时候，大家在讨论跨链有何用？用户还不是一样使用中心化的交易所服务，可是他们忘了，跨链技术是在持续迭代的，<strong>跨链对Dex十分有帮助，这是跨链在着两年内最好的落地点</strong>。我前几天在国外的论坛上发现了一个跨链产品，利用多签把BTC固定在某个地址上，BTC资产由跨链节点中的15个节点来负责，然后在自己的链中生成对应的BTC-X代币，跟BTC 1:1 生成，另外还支持ETH到自身公链的映射，<strong>已经可以使用了</strong>。这只是我看到的一个简单实现方法，在几年前就有人讨论，实现起来也相对简单，一定程度上满足用户的信任需求，不用向币安一样，前期需要把9000个BTC打到指定地址，然后在币安链上生成对应的BTC-B（币安现采取了一种折中方案，后期一定会有出色的技术框架被开发出来）。</p>
+<p><img src="https://github.com/BlockBB/Blockbb_blog_comments/blob/master/division_line_img/pencil.png?raw=true" alt=""></p>
+<p>在组织跨链技术活动的时候，Polkdot生态的技术朋友，跟我说现在Polkdot生态里有团队在开发统一标准，未来其他公链直接调用这些框架，就可以接入Polkdot主链，跟其他代币进行交流，技术总是一点点在实现的，不可能几千万行代码突然出现，需要些耐心。</p>
+<p>下面是我<strong>看到的和想到的</strong>一些DEX和DeFi的应用例子，越来越丰富了，也就是说火币公链在这些方面都可以进行探索，利用现有的交易经验，也许会为行业带来一款牛逼的产品。</p>
+<ol>
+<li>Uniswap，其商业模式就是每笔千分之三的手续费，Huobi Dex 同样可以这样。</li>
+<li>OpenSea作为NFT市场，它允许用户免费公布自己的数字资产/艺术品，收取2.5%的交易佣金。</li>
+<li>Wyre，很多Dapp都用它来打通法币支付通道，Wyre可以收取手续费，尤其是在你在使用的某个Dapp的时候。</li>
+<li>未来，火币的HUSD部署在其DEX上，人们通过Husd买卖其他跨链过来的代币或者HT，就像上面的Wyre例子，利用火币自身的OTC服务来收取费用、服务用户。</li>
+<li>火币公来里的DEX可以做衍生品服务吗？YES！看看中心化衍生品交易所MPX是怎么尝试的就知道了。</li>
+<li>Compound里的C-token，它将一个未来兑付的债券/利润/期权变成了一种token，可以进行买卖，用户达到资金流动的目的。</li>
+<li>从这几次央行官员的发言，中国央行版本的CDBC呼之欲出，这对于火币公链来说，或许是个大机会，在满足一定的合规条件后，火币有机会接入其系统，现在的法币OTC业务国家也处于默许的状态，尤其火币的主要业务在中国，从品牌和经验上来说，相比其他交易所具有一定的优势。</li>
+</ol>
+<p><img src="https://github.com/BlockBB/Blockbb_blog_comments/blob/master/division_line_img/pencil.png?raw=true" alt=""></p>
+<h4><span id="火币公链技术社区的建设">火币公链技术社区的建设</span></h4>
+<p><strong>社区意味着亲密的关系和共同的东西</strong>，在我们这个行业，亲密的关系来缘于共同的东西，什么才是当前圈子里共同的东西呢？<strong>服务</strong>，其实<strong>带用户赚钱</strong>也只是服务的一种，火币的交易所之所以吸引了这么多人，这么多项目方愿意上币，无非是提供了当前市场需要的服务 – <strong>赚钱服务 &amp; 交易服务</strong>。</p>
+<p>在我最开始做公链社区的时候，以为吸引开发者进来就好，无非就是激励嘛，还开辟了技术论坛等其他服务，后来发现这些都不是根本的东西，当所有人都问我你们公链可以做什么的时候，我回答说“<strong>这个公链既稳定又快速，什么都可以做</strong>”，什么都可以做意味这什么都不可以做，华为创始人任正非先生说“<strong>服务不要脱离客户的实际需求</strong>”。</p>
+<p>在我们做传统技术服务的时候，为什么有客户和开发者愿意买单呢？首先是这个服务是他需要的。我前面也说了交易所最大优势就在于交易，所以DEX是火币公链<strong>一块非常好的试验田</strong>，交易服务正是大家需要的，Huobi 公链可以考虑如何提供便捷易于上手的工具。</p>
+<p>前面已经list了7个例子，其中6个是已经有人在做的，这些都是很好的例子，所以不要做社区，要做服务，这篇笔记写出了我的心酸思考 – <a href="https://blockbb.io/2019/04/19/Not-make-tech-community/">技术社区是“做”不出来的</a>，这也是所有做应用类公链的一个问题。</p>
+<p>回过头来看，火币公链的产品或许可以沿着这条路持续探索，DEX - Defi - 其他金融交易 - 合规 - 资产上链，达到李林所说的<strong>创新突破和战略防守</strong>目标，<strong>所以交易所类的公链非常值得期待，看看火币会带来什么变化。</strong></p>
+<p><img src="https://github.com/BlockBB/Blockbb_blog_comments/blob/master/division_line_img/xuhao_3.jpeg?raw=true" alt=""></p>
+<h3><span id="火币中国可以做更多吗">火币中国可以做更多吗？</span></h3>
+<p>有时你会因为一个人去使用一个产品，许多人因为李林去使用火币的服务，也有人因为何一跟CZ去使用Binance的服务。</p>
+<p>我开始注意火币中国是从<strong>袁煜明和嘉骏</strong>参演的微电影“<strong>火之恋</strong>”开始的，嘉骏在朋友圈一顿CX。最有趣的是某个论坛的评论区，没人讨论电影，反而是一群圈外的人在讨论比特币和区块链，我想肯定有人因此而开始研究<strong>火币</strong>和区块链。</p>
+<p>火币研究院的报告质量一向很高，去年给同事为了写一份内部报告，关于区块链游戏的生态研究，还借鉴了火币研究院的部分研究心得。</p>
+<p>我在做技术分享活动的时候，**总会被人问到区块链到底能做什么？**怎么落地的问题，所以我平时喜欢搜集一些这方面的优秀文章，袁煜明写的一篇文章 – **你更愿意相信事实？还是逻辑？**就给回答这个问题提供了一个很好的思路，我在跟别人谈到区块链前景的时候，就会借用一下其中的观点，社区里有形形色色的人，每一类人对区块链的接受度都不大一样，所以与别人谈论这个问题时使用的例子和角度都不一样。</p>
+<p><strong>就在这样一点一滴的接触和使用中，火币中国的品牌形象慢慢渗透进我的脑子里。</strong></p>
+<p>火币中国现在最让大家熟知的除了火币研究院就是火币大学了，之前的<strong>区块链100问</strong>就非常好，其普适性和娱乐性兼具，可以很好的向圈外人介绍区块链，<strong>我们也在制作区块链技术课程</strong>，深知这些课程不但具有教学效果，也具有品牌效应，尤其是在强技术性质的区块链世界，优秀的内容沉淀对一个项目的成长具有非常大的好处，其价值是长久的。</p>
+<p>举个简单的例子，关于以太坊和比特币的各类文章遍布网络，任何进入这个圈子的人都接触过这两个公链的资料，反过来也形成反哺效应，越来越多的人乐于撰写BTC和ETH的文章。</p>
+<p>交易所里这么做的团队很少，绝大多数的宣传全部集中于交易业务层面，都奔着💰去了，很少从品牌价值的角度去考虑这些事情。现在Binance利用其慈善项目为品牌进行加持，火币在利用火币大学、研究院和火币英才在做类似的事情。</p>
+<p>火币大学和火币研究院在做的事情有一定的公益性质，<strong>但公益事业有自身的特性，它很难快速推广，很难商业化，随着推广面越大费用也就越高</strong>，<strong>商业服务是按照用户需求来导向的，一种被动服务，随着规模越来越大，边际成本通常也会降下来，公益和慈善事业则更多是一种主动服务，˙这会导致用户需求不明确的问题，你提供的“公益”服务会存在一定程度的浪费</strong>。</p>
+<p><img src="https://github.com/BlockBB/Blockbb_blog_comments/blob/master/division_line_img/pencil.png?raw=true" alt=""></p>
+<p>火币研究院自不必说，主要是输出研究报告，输出品牌影响力。火币大学正在跟某些大学、政府机构建立合作，也有不错的成果，但通常大学的课程审批、建立流程都很严格，也比较漫长，政府部门存在同样的问题，进度非常慢，<strong>能否开辟一条新的合作途径呢？</strong></p>
+<p>从市场角度来看，如果火币大学和研究院选择跟更多的企业单位合作，从推进速度和合作成果上来说，性价比会高于跟大学和政府合作，我觉得这是两种不同的方式，没有谁对谁错，只有资源倾斜的问题，下文试图给出几个合作的例子：</p>
+<p>1.<strong>火币英才培养计划</strong></p>
+<p>目的：推广火币品牌、制定行业人才标准、培训区块链人才</p>
+<p>方式：与国内外的技术平台进行合作，例如 国内的<strong>CSDN</strong>、输出技术课程的<strong>极客学院和极客时间</strong>。火币利用行业影响力寻找合适的讲师，或者进行<strong>讲师选拔活动</strong>，然后对方平台提供制作流程和推广的服务，现在各大平台都稀缺这种优秀的课程。</p>
+<p>对于火币来说，课程可以免费也可以付费，课程其他的周边收入都可以贡献给合作平台，我想会有很多类似100问这样的课程被推出来，然后利用前期积累的教学经验，可以跟极客这样的平台推广学员线下教学工坊活动，费用全部回馈给合作方，这期间就会慢慢建立起一套成熟的<strong>英才培养模式和英才考核标准</strong>。</p>
+<p>优点：充分调动火币现有的项目方和合作伙伴资源，投入的人力比较少，同时可以满足合作方的商业需求，或者微有盈利，随着这种合作的日益加深，也可以合作举办具有特色的行业大会，形成长期品牌价值。这种合作模式也可以带到其他国家，<strong>以前有个微软的证书标准，未来也会有火币的XX证书标准。</strong></p>
+<p><img src="https://github.com/BlockBB/Blockbb_blog_comments/blob/master/division_line_img/pencil.png?raw=true" alt=""></p>
+<p>2.<strong>篝火大会</strong></p>
+<p>目的：推广火币中国的品牌、举办行业大会，引领交易所未来方向。</p>
+<p>方式： 大家都知道一年一度的万向区块链大会，还有纽约的共识大会，这两个大会在中美是两个顶级行业盛会，随着火币中国不断的的开疆拓土，越来越适合举办这样高质量的“<strong>篝火会</strong>”，<strong>篝火寓意着火币之火</strong>，火币主办，可以联合其他国内外的媒体和专门的展会服务商。</p>
+<p>交易所的发展方向，行业未来、国家政策、技术开发等都是一个很好的主题，届时也可以推出火币交易平台的新服务，火币公链的新系统等等。这个行业里，除了政府和大学、没有比交易所更适合举办这类大会，另外火币的目的是宣传品牌，所以其他收入可以全部贡献给合作方，合作共赢。</p>
+<p>引申：篝火会可以有几个系列，例如前段时间火币举办的矿池、矿工大会，未来待火币公链面试之后，其新推出的服务，无论是DEX还是其他合规服务，都需要大量的开发者和公司进入，这时可以选择和其他传统公司联合举办行业大会、开发者活动。</p>
+<p>优点：行业大会的宣传效果和品牌影响力非常持久，尤其是定期举办的大会，行业内部会形成“<strong>期待和共识</strong>”。当和其他外部合作伙伴组织跨界合作的时候，还会影响其他外部用户的进入。</p>
+<p><img src="https://github.com/BlockBB/Blockbb_blog_comments/blob/master/division_line_img/pencil.png?raw=true" alt=""></p>
+<p>3.<strong>商会合作</strong></p>
+<p>目的和方式：火币现在有澳洲日本韩国等交易所，也可以看到朋友圈的火币人四处飞来飞去谈合作。是否可以考虑利用现有的民间力量、商会组织呢？</p>
+<p>世界各地都有中国商会组织，如果在这些国家开展活动，无论是建立业务团队还是开通当地的<strong>法币渠道，或者OTC渠道，华人商会都会个很好的入口</strong>，而且商会通常都会跟当地的中国使馆关系良好，在当地拥有一定的政商渠道。这些商会成员都有一定的<strong>法币出入金需求</strong>，火币的HUSD或许能<strong>提供一些有趣的服务给它他们</strong>（还记着我前面提到的发币手续费业务嘛？）</p>
+<p>如果直接联系当地的中国使馆会困难很多，商会反而容易一些，而他们和使馆的关系会更紧密一些，现在中国央行的CDBC服务日益接近推出，国家层面可能对数字货币会有一定的支持政策，毕竟交易所的业务是面向全球的，世界各地的用户都可以使用交易服务，<strong>中国的数字货币如果向世界推出，尤其是跟中国交好的国家，各个交易所会是个很不错的渠道</strong>。</p>
+<p>世界各地的大使馆也会逐渐接受数字货币理念。乐于在当地扩展中国的影响力，想办法联系各国华人商会，以此进入当地市场，哪怕只是做个推广，这也是一个很性价比很高的方式。</p>
+<p>优点：前期投入不会很大，当前<strong>火币中国</strong>的商业性没那么强，反而适合做此类尝试，这无论是对未来的火币大学和火币研究院都很有好处，当然最大的益处是对火币交易所的发展有巨大助力，这些慢慢建立起来的优势也<strong>具有护城河效应</strong>，这也是另一层面的国际化尝试。</p>
+<p><img src="https://github.com/BlockBB/Blockbb_blog_comments/blob/master/division_line_img/pencil.png?raw=true" alt=""></p>
+<p>4.<strong>火币Love系列</strong></p>
+<p>5月初的时候，火币创始人李林携一众行业领袖组织了一场沙漠徒步活动，无论是从火币的品牌宣传，还是这场活动本身给参与者带来的身心修行，都非常有意义。这是火币人的一次探索，还能更深入一层吗？</p>
+<p><strong>火币 Love 系列</strong>意味着火币通过长久的、有计划的公益、奉献、慈善活动，回馈社区，帮助那些特定的受助群体，传播火币的使命和价值观。</p>
+<p>我们这个领域，经常被圈外的人鄙视为暴发户，或者投机倒把的骗子，我从来不对喷，也懒得解释。如果能通过行动来展示我们加密货币人的担当，我想公益/慈善活动会是个非常棒的途径。</p>
+<p>在一个适当的范围内，每个人都会表现出利他之心，无论是对受助的人还是企业自身，这都是一件十分有意义的事情，仅从品牌的角度来讲，币安就在做一件正确的事，<strong>如果某件事，既对他人有利，又丰富了自己，为何不尝试呢？</strong>，接下来就是怎么执行的问题。</p>
+<p>我个人的理解，慈善是一种行动，一个习惯，<strong>慈善需要的是长久性，可复制性和落地性</strong>，</p>
+<p><strong>长久性</strong>：这就跟你喜欢健身、喜欢阅读学习一样，需要长时间的坚持和计划性，偶尔的随性而为不太建议，尤其是对企业来说。</p>
+<p><strong>可复制性</strong>：火币的行动如果可以带动其他火币的粉丝都Follow这一行动，则可以称之为可复制性，例如环保行为，对困难学校的资助活动，都可以影响其他人与我们一起，同时这些有热情的人也可以成为火币的大使，通常个体的慈善活动都不具有长久性，通过火币的组织，可以让这些散落各地的星星之后聚合起来形成<strong>篝火效应</strong>，一个适合的慈善活动就可以坚持下来，裂变开来。</p>
+<p><strong>落地性</strong>：慈善活动不需要高大上，不能虎头蛇尾、捐钱了事，我们需要从策划到募资，从跟踪到执行都要全程参与，如果只是把资金给了某某红会，你相信他们能把活动落到实处吗？区块链具有天然的公信力，从募资到执行全部可以记录到火币公链上，委员会募资了多少HT，花掉多少HT，清单是什么？都以利用区块链的信任属性记录在案。</p>
+<p><strong>方向</strong>：受助对象上我倾向于在女性和儿童群体寻找。弱势的女性和儿童群体是最应该帮助的，方式也多种多样，现在移动网络发达，一个简单的活动可能只需一张图片就可以，在互联网上传播开来达到所需要的效果，帮助到受助者。</p>
+<p><strong>案例</strong>：我前段时间看到一篇介绍慈善活动的文章，慈善发起者是位缅甸创业者-Than Tun Win，在新加坡读完书期间会老家探亲，发现这个国家的孩子们连个自行车都没有，后来联系中国的共享单车公司和财务处置公司，以低价买走了上千量中国的共享单车，经过简单处理后，发送给乡村的孩子们。</p>
+<p>这位小哥他肯定希望有人帮助他一起筹划此次行动，无论你捐钱还是出力。这样的人有可能会变成<strong>火币的大使</strong>，传播火币的“<strong>能量</strong>”，因为善意总是会互相感染。</p>
+<p><img src="https://github.com/BlockBB/Blockbb_blog_comments/blob/master/division_line_img/pencil.png?raw=true" alt=""></p>
+<h4><span id="存量厮杀的世界">存量厮杀的世界</span></h4>
+<p>现在世界各国都在忙着干架，除了中美两国对掐，美帝早些时间跟加拿大、墨西哥、德国等国家都处在打贸易战的状态，现在的日韩高新产业的互殴，英国强行脱欧。有报道说今年世界经济能超过5%的只有中国、印度和越南三个国家，其他大部分国家都在1%和-1%之间游荡，连德国日本都不例外，大国都想从其他人嘴里抢食。</p>
+<p>前两个星期，国内三大交易所因为平台币回购的话题打嘴仗，18，19年新蹿升的交易所Fcoin、Biki、MXC都在分食一线交易所的蛋糕，尤其对以国内用户居多的火币OkEX影响大，好在我们这个行业的起伏周期短，变化快，牛市来了大家就能嗨一阵子，喘口气。</p>
+<p><strong>我们反过来看，如果市场起来了，蛋糕大了，进来的人多了，钱也多了，这些人会选择优先选择哪家交易所呢？</strong>，这才是我们更应思考的问题，圈内的交易者看<strong>服务</strong>，这块火币一直在优化，圈外的人就看长期的<strong>品牌建设、内容铺垫</strong>，当他听到，看到的，搜到的的交易所信息，处处都能看到火币的内容，你猜他会使用谁的服务？优质的内容沉淀、品牌建设及其重要，现在利用网络裂变，投入很小就会产生极佳的结果。</p>
+<p>火币研究院、火币中国正在做这样的事情，已然走在前列，不过正如我前面所谈的，还有很多其他方式需要探索，这些工作会很困难，时间会漫长一点，但这些事情<strong>具有时间累积的优势</strong>，例如前面说的各国商会接洽合作的案例，别人很难短时间内超过。</p>
+<h4><span id="写在最后">写在最后</span></h4>
+<p>工作之余，我这2个月陆陆续续写了4篇跟交易所相关的日记，聊<a href="https://blockbb.io/2019/05/28/Exchange-Freedom-in-the-Crypto-Ball/">币安的运营和愿景</a>，谈<a href="https://blockbb.io/2019/06/18/User-Growth-Hacker-for-MXC/">MXC的增长</a>，侃<a href="https://blockbb.io/2019/06/26/How-to-use-Libra-liquidity/">Libra和交易所的关系</a>，还有这篇<strong>进击中的火币</strong>，写这些笔记，即有学习和思考的需要，也希望对<strong>火币</strong>等交易所有所助力，他们提供了服务给我，我提些建议给他们，互惠互利，挺好。</p>
+<p>非洲有句古谚语说的好 – <strong>独行快，众行远</strong>！</p>
+<p><strong>前路漫漫，同行同行！</strong></p>
+<p><img src="https://github.com/BlockBB/Blockbb_blog_comments/blob/master/division_line_img/glass.jpeg?raw=true" alt=""></p>
+
+                
+
+                <hr>
+                <!-- Pager -->
+                <ul class="pager">
+                    
+                    
+                        <li class="next">
+                            <a href="/2019/07/02/currency-revolution-flash/" data-toggle="tooltip" data-placement="top" title="Currency revolution flash">Next Post &rarr;</a>
+                        </li>
+                    
+                </ul>
+
+                <!-- duoshuo Share start -->
+                
+                <!-- 多说 Share end-->
+
+                <!-- 多说评论框 start -->
+                
+                <!-- 多说评论框 end -->
+
+                <!-- disqus comment start -->
+                
+                    <div class="comment">
+                        <div id="disqus_thread" class="disqus-thread"></div>
+                    </div>
+                
+                <!-- disqus comment end -->
+            </div>
+            
+            <!-- Tabe of Content -->
+            <!-- Table of Contents -->
+
+    
+      <aside id="sidebar">
+        <div id="toc" class="toc-article">
+        <strong class="toc-title">Contents</strong>
+        
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">火币集团到底有多少条业务线？</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">1.1.</span> <span class="toc-nav-text">业务疑问</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">火币公链真能火吗？</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">2.1.</span> <span class="toc-nav-text">火币公链让财富更自由、让交易更自由</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">2.2.</span> <span class="toc-nav-text">Huobi  DEX</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">2.3.</span> <span class="toc-nav-text">火币公链技术社区的建设</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">火币中国可以做更多吗？</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">3.1.</span> <span class="toc-nav-text">存量厮杀的世界</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">3.2.</span> <span class="toc-nav-text">写在最后</span></a></li></ol></li></ol>
+        
+        </div>
+      </aside>
+    
+
+                
+            <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                       
+                          <a class="tag" href="/tags/#火币" title="火币">火币</a>
+                        
+                          <a class="tag" href="/tags/#Exchange" title="Exchange">Exchange</a>
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+                <hr>
+                <h5>FRIENDS</h5>
+                <ul class="list-inline">
+
+                    
+                        <li><a href="http://beantech.org" target="_blank">Bean Tech</a></li>
+                    
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<!-- disqus embedded js code start (one page only need to embed once) -->
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = "your-disqus-ID";
+    var disqus_identifier = "http://blockbb.io/2019/08/17/The-Running-Boy-Huobi/";
+    var disqus_url = "http://blockbb.io/2019/08/17/The-Running-Boy-Huobi/";
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<!-- disqus embedded js code start end -->
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'hover',
+          placement: 'left',
+          icon: 'ℬ'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
+
+<script type="text/javascript" src="/js/zooming.js"></script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                
+                
+                    <li>
+                        <a target="_blank" href="https://twitter.com/ImBlockBB">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+                
+
+                
+
+                
+
+                
+
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; BlockBB 2019 
+                    <br>
+                    Theme by <a href="http://huangxuan.me">Hux</a> 
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-heart"></i>
+                    </span> 
+                    re-Ported by <a href="http://beantech.org">BeanTech</a> | 
+                    <iframe style="margin-left: 2px; margin-bottom:-5px;" frameborder="0" scrolling="0" width="91px" height="20px" src="https://ghbtns.com/github-btn.html?user=YenYuHsuan&repo=hexo-theme-beantech&type=star&count=true">
+                    </iframe>
+                </p>
+				<p class="copyright text-muted">
+			       <a><img alt="web trackers" src="https://ssl.gostats.com/bin/count/a_506642/t_1/i_1/ssl_monster.gostats.com/counter.png" style="border-width:0"></a>
+			       visitors since 2019/02/15,
+				   <span class="post-count">51.6k words altogether</span>	   
+				</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js"></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- 
+     Because of the native support for backtick-style fenced code blocks 
+     right within the Markdown is landed in Github Pages, 
+     From V1.6, There is no need for Highlight.js, 
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0  
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/    
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("http://blockbb.io/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+<script>
+    // dynamic User by Hux
+    var _gaId = 'UA-XXXXXXXX-X';
+    var _gaDomain = 'yoursite';
+
+    // Originial
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
+</script>
+
+
+
+
+<!-- Baidu Tongji -->
+
+
+
+
+
+
+	<a id="rocket" href="#top" class=""></a>
+	<script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+    <script type="text/javascript" src="/js/toc.js?v=1.0.0" async=""></script>
+<!-- Image to hack wechat -->
+<img src="http://blockbb.io/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>
