@@ -14,13 +14,6 @@
     </url>
 
     <url>
-        <loc>http://blockbb.io/categories/%E5%8A%A0%E5%AF%86%E8%B4%A7%E5%B8%81/</loc>
-        <lastmod>2019-04-19T05:12:32.603Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://blockbb.io/categories/%E5%93%B2%E5%AD%A6/</loc>
         <lastmod>2019-05-28T10:36:28.803Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -107,6 +100,13 @@
     <url>
         <loc>http://blockbb.io/categories/%E8%87%AA%E6%88%91%E6%88%90%E9%95%BF/</loc>
         <lastmod>2019-09-24T10:09:05.751Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://blockbb.io/categories/%E5%8A%A0%E5%AF%86%E8%B4%A7%E5%B8%81/</loc>
+        <lastmod>2019-10-23T05:35:31.251Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
