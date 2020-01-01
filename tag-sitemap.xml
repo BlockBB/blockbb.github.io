@@ -51,13 +51,6 @@
     </url>
 
     <url>
-        <loc>http://blockbb.io/tags/%E5%8A%A0%E5%AF%86%E8%B4%A7%E5%B8%81/</loc>
-        <lastmod>2019-04-19T05:12:32.603Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://blockbb.io/tags/%E7%86%8A%E5%B8%82%E6%80%9D%E8%80%83/</loc>
         <lastmod>2019-04-19T05:12:32.603Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -228,6 +221,27 @@
     <url>
         <loc>http://blockbb.io/tags/%E5%BD%93%E5%89%8D%E7%9A%84%E9%80%89%E6%8B%A9/</loc>
         <lastmod>2019-10-23T05:35:31.251Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://blockbb.io/tags/%E5%8A%A0%E5%AF%86%E8%B4%A7%E5%B8%81/</loc>
+        <lastmod>2020-01-01T13:38:46.208Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://blockbb.io/tags/%E4%B8%8B%E4%B8%80%E4%B8%AA10%E5%B9%B4/</loc>
+        <lastmod>2020-01-01T13:38:46.208Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://blockbb.io/tags/20%E5%B9%B4Flag/</loc>
+        <lastmod>2020-01-01T13:38:46.208Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
